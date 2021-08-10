@@ -15,7 +15,7 @@ SELECT DISTINCT P.ProductID, P.ProductName, SUM(OD.Quantity * P.Price) Revenue
 FROM products P
 JOIN order_details OD ON OD.ProductID = P.ProductID
 WHERE P.ProductName != "Alice Mutton"
-GROUP BY OD.Quantity
+GROUP BY P.ProductID,P.ProductName
 ORDER BY Revenue DESC LIMIT 5;
 ```
 
