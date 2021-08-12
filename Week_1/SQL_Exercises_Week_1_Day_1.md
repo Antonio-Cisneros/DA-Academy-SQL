@@ -3,13 +3,18 @@
 ## 1. An alphabetical list of customers located in Mexico
 
 ```sql
-SELECT * FROM customers WHERE Country = "Mexico" ORDER BY CustomerName;
+SELECT * 
+FROM customers 
+WHERE Country = "Mexico" 
+ORDER BY CustomerName;
 ```
 
 ## 2. A list of employees from youngest to oldest
 
 ```sql
-SELECT * FROM employees ORDER BY BirthDate DESC;
+SELECT * 
+FROM employees 
+ORDER BY BirthDate DESC;
 ```
 
 ## 3. A list of orders that included “Dairy Products” and “Grains/Cereals”
@@ -49,7 +54,9 @@ ORDER BY C.Country;
 ## 6. The list of orders managed by Nancy Davolio during 1997
 
 ```sql
-SELECT O.OrderID, O.CustomerID FROM orders O
-LEFT OUTER JOIN employees E ON O.EmployeeID = E.EmployeeID
+SELECT O.OrderID, O.CustomerID 
+FROM orders O
+	LEFT OUTER JOIN employees E 
+	ON O.EmployeeID = E.EmployeeID
 WHERE E.FirstName = "Nancy" AND O.OrderDate >= "1997-01-01";
 ```
