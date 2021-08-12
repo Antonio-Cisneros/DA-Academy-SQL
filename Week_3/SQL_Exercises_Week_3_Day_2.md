@@ -26,7 +26,7 @@ Hint: Google the usage of the SQL function YEAR().
 
 ```sql
 SELECT CONCAT(FIRST_NAME," ",LAST_NAME) "Name", HIRE_DATE "Hire date" FROM employees
-WHERE EXTRACT(YEAR FROM HIRE_DATE) LIKE "1987%";
+WHERE EXTRACT(YEAR FROM HIRE_DATE) = "1987";
 ```
 
 ## 5. Write a query to display the first_name of all employees who have both "b" and "c" in their first name.
