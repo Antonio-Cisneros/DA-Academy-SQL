@@ -52,7 +52,7 @@ A) Describe how could you assign a manager to an employee, hence creating a hier
 (Clue: you're allowed to modify the [Employees] attributes)
 
 ```sql
-SELECT E.EmployeeID, CONCAT(E.FirstName,' ', E.LastName) AS "Employee Name", CONCAT(.FirstName,' ', M.LastName) AS "Manager Name"
+SELECT E.EmployeeID, CONCAT(E.FirstName,' ', E.LastName) AS "Employee Name", CONCAT(E2.FirstName,' ', E2.LastName) AS "Manager Name"
 FROM employees E
   JOIN Employees E2 
   ON E2.ManagerID = E.EmployeeID;
