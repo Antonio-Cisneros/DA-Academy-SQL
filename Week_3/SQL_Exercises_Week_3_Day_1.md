@@ -31,7 +31,8 @@ FROM employees;
 
 ## 5. Write a query to get the employee ID, names (first_name, last_name), salary in ascending order of salary.
 
-```sqlSELECT EMPLOYEE_ID, CONCAT(FIRST_NAME," ",LAST_NAME) AS "Name", SALARY
+```sql
+SELECT EMPLOYEE_ID, CONCAT(FIRST_NAME," ",LAST_NAME) AS "Name", SALARY
 FROM employees
 ORDER BY SALARY;
 ```
