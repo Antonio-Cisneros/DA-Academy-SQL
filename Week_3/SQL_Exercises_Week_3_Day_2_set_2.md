@@ -84,9 +84,9 @@ ORDER BY SUM(SALARY);
 ```sql
 SELECT AVG(SALARY) AS "Average salary", JOB_ID
 FROM employees
-WHERE JOB_ID NOT IN ("Programmer")
-GROUP BY JOB_ID ORDER BY JOB_ID;
-
+WHERE JOB_ID NOT IN ("IT_PROG")
+GROUP BY JOB_ID
+ORDER BY JOB_ID;
 ```
 
 ## 12. Write a query to get the total salary, maximum, minimum, average salary of employees (job ID wise), for department ID 90 only.
